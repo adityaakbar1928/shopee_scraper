@@ -14,7 +14,7 @@ Scrape shopee products informations, including [Product Name, Price, Stock, Prod
 6. after completed, type node index.js to run the tools
 7. shopee product informations [including name, price, stock, descriptions, and product images] will be added inside the folder named with the title of the products
 
-How to get shopee seller id?
+# How to get shopee seller id?
 
 - search the product from your target seller store on shopee
     - eg, https://shopee.co.id/HANASUI-LIPTIN-i.14881876.16324661639?sp_atk=18fa954b-ef4b-4b1c-95b7-fd804ab78195&xptdk=18fa954b-ef4b-4b1c-95b7-fd804ab78195
