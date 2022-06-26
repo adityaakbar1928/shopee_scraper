@@ -20,6 +20,11 @@ Scrape shopee products informations, including [Product Name, Price, Stock, Prod
     - eg, https://shopee.co.id/HANASUI-LIPTIN-i.14881876.16324661639?sp_atk=18fa954b-ef4b-4b1c-95b7-fd804ab78195&xptdk=18fa954b-ef4b-4b1c-95b7-fd804ab78195
 - check the url, as you can see, from my url, i can see the seller id is 16324661639 while the 14881876 is item id
 
+# What if i get banned from accessing shopee API ?
+if you get banned, dont worry, you only get banned from accessing APIs only, not banned to accessing shopee.
+what you need to do when you get that message?
+you can use vpn to continue scraping or just wait 10-30 minutes, and you can continue again without using VPN.
+
 # Footer
 This scripts is open source, feel free to edit and add the features.
 but please include the credits
