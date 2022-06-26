@@ -4,7 +4,8 @@ Scrape shopee products informations, including [Product Name, Price, Stock, Prod
 # How To Use
 1. Install NodeJS, link: https://nodejs.org/dist/v16.15.1/node-v16.15.1-x64.msi
 2. Extract script to folder
-3. open config.js with text editor (eg. notepad), and enter shopee seller id and put the maximum scrape to whatever you like
+3. open config.js with text editor (eg. notepad), and enter shopee seller id and put the maximum scrape to whatever you like.
+
     3.a for example, if you put 10 in maximum scrape, the tools will scrape 10 products.
     
     3.b recommended to put 50 - 100 products / day otherwise, shopee will ban your ip address from accessing their APIs.
