@@ -2,7 +2,7 @@ import fs from 'fs';
 import { Console, time } from 'console';
 import { parse } from 'path';
 import request from 'request';
-import config from './config.js';
+import config from 'config.js';
 import fsx from 'fs-extra';
 import chalk from 'chalk';
 import fetch from 'node-fetch';
@@ -26,14 +26,6 @@ const download = function(uri, filename, callback){
       request(uri).pipe(fs.createWriteStream(filename)).on('close', callback);
     });
 };
-
-function sleep(time, callback) {
-    var stop = new Date().getTime();
-    while(new Date().getTime() < stop + time) {
-        ;
-    }
-    callback();
-}
 
 function scrapeShopee(callback){
     const settings = {
@@ -77,6 +69,8 @@ scrapeShopee(function(oke4){
         let price = oke5.price * 0.000010;
         const image_url = oke5.images;
         const images_url = image_url.toString().split(',')
+        const createDir = `./${namapd_wospace}`;
+        fsx.ensureDir(createDir);
         let desc_url = `https://shopee.co.id/api/v2/item/get\?itemid\=${itemsid}\&shopid\=${config.seller_id}`;
         let konfig2 = {
             method: "Get",
@@ -92,8 +86,6 @@ scrapeShopee(function(oke4){
             .then((json) => {
                 try {
                     const dek = json.item.description;
-                    const createDir = `./${namapd_wospace}`;
-                    fsx.ensureDir(createDir);
                     for(var a in images_url){
                         var exist = images_url[a]
                         const imgur = `https://cf.shopee.co.id/file/${exist}`;
@@ -118,9 +110,6 @@ scrapeShopee(function(oke4){
             fs.appendFileSync('data.csv', '\r\n');
             console.log(hijau("Sucess!"))
             console.log(hijau("================================================"))
-            sleep(1000, function() {
-                //do nothing
-             });
             });
     };
     //console.log(hijau("All Process is done!"))

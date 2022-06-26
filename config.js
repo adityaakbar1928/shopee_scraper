@@ -18,5 +18,5 @@ Made with ❤ by: Aditya Akbar (https://facebook.com/topi.hitam.1928)
 */
 export default{
     "seller_id": "146198073", // put shopee seller id here
-    "maximum_scrape": 1, // set how much product from that seller you want to scrape
+    "maximum_scrape": 50, // set how much product from that seller you want to scrape
 }
