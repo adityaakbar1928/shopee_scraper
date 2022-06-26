@@ -1,4 +1,4 @@
-# shopee_scraper
+# Shopee Products Scrapper
 Scrape shopee products informations, including [Product Name, Price, Stock, Product Description, Product Images]
 
 # How To Use
